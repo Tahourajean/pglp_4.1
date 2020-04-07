@@ -70,7 +70,15 @@ public class Personnel
         return "Personnel{" + "nom=" + nom + ", prenom=" + prenom + ", dateNaiss=" + dateNaiss + ", telephones=" + telephones + '}';
     }
    
+    public Personnel utilisationPers()
+    {
+        Personnel p;
+        p = new Personnel.Builder("Simporé","Naimatou")
+                .ajouterTelephone(new Telephone("75221521","0751548227" ,"72556688")).build();
+        p.toString();
+        return p;
    
+    }   
    
    
 }
