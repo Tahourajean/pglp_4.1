@@ -8,12 +8,17 @@ import java.util.List;
  * Hello world!
  *
  */
-public class Personnel
+public class Personnel implements Personne
 {
     final String nom;
     private final String prenom;
     private final LocalDate dateNaiss;
     private final List<Telephone> telephones;
+
+    @Override
+    public void print() {
+        this.toString();
+    }
 
 
 
