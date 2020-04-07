@@ -1,6 +1,7 @@
 package fr.uvsq;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +23,7 @@ public class Personnel
     private final String prenom;
     //parametre optionnels
     private  LocalDate dateNaiss = LocalDate.now();
-    private  List<Telephone> telephones = null;
+    private  List<Telephone> telephones = new ArrayList<>();
     
    
    public Builder(String nom, String prenom)

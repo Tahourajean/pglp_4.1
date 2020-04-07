@@ -6,7 +6,7 @@ package fr.uvsq;
  */
 public class Telephone
 {
-    private String numero1;
+   String numero1;
     private String numero2;
 	private String numero3;
 	
